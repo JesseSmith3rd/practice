@@ -1,16 +1,39 @@
+var a = 3 + 4;
+console.log(a);
+
+function + (a,b){
+  return // add the two #'s
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //long running function
-function waitThreeSeconds() {
-    var ms = 3000 + new Date().getTime();
-    while (new Date() < ms){}
-    console.log('finished function');
-}
-
-function clickHandler() {
-    console.log('click event!');
-}
-
-//listen for the click event
-document.addEventListener('click', clickHandler);
-
-waitThreeSeconds();
-console.log('finished execution');
+// function waitThreeSeconds() {
+//     var ms = 3000 + new Date().getTime();
+//     while (new Date() < ms){}
+//     console.log('finished function');
+// }
+//
+// function clickHandler() {
+//     console.log('click event!');
+// }
+//
+// //listen for the click event
+// document.addEventListener('click', clickHandler);
+//
+// waitThreeSeconds();
+// console.log('finished execution');
