@@ -1,14 +1,12 @@
-function greet(name) {
-  name = name || '<Your name here>';
-  console.log('Hello ' + name);
-}
+var person = new Object();
 
-greet('Jesse');
-greet();
+person['firstname'] = 'Jesse'; //this is one way to set a value inside an Object
+person['lastname'] = 'Smith';
 
+var firstNameProperty = 'firstname';
 
-
-
+console.log(person);
+console.log(person[firstNameProperty]);
 
 
 
@@ -16,6 +14,23 @@ greet();
 
 
 
+
+
+
+
+
+
+
+
+
+//console.log(libraryName);
+// function greet(name) {
+//   name = name || '<Your name here>';
+//   console.log('Hello ' + name);
+// }
+//
+// greet('Jesse');
+// greet();
 // var a;
 // //goes to internet and looks for a value
 // a = 'hi';
