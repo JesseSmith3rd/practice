@@ -1,14 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>html 5 form attributes part 1 example</title>
 </head>
+
 <body>
-  <script src="lib1.js"></script>
-  <script src="lib2.js"></script>
-  <script src="app.js"></script>
+
+  <form name="form1" method="post" action="">
+    <p>
+      <label for="hexcode">Enter the 6 digit hex code :</label>
+      <input type="text" name="hexCode" id="hexCode" size="40" title="Please enter 6 digit hexcode"
+      placeholder="enter code to proceeded by the hash sign" required autocomplete="on" autofocus pattern="#[a-fA-F0-9]{6}">
+    </p>
+    <p>
+      <input type="submit" name="button" id="button" value="submit">
+    </p>
+  </form>
+
 </body>
+
 </html>
