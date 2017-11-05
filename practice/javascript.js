@@ -10,3 +10,4 @@
 //Back to variables
 
 a = 42;
+console.log(a);
