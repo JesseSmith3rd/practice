@@ -1,16 +1,14 @@
-var person = new Object();
+//by value (primitives)
+var a = 3;
+var b;
 
-person['firstname'] = 'Jesse'; //this is one way to set a value inside an Object
-person['lastname'] = 'Smith';
+b = a;
+a = 2;
 
-var firstNameProperty = 'firstname';
+console.log(a);
+console.log(b);
 
-console.log(person);
-console.log(person[firstNameProperty]);
-
-
-
-
+//What happens is the
 
 
 
@@ -21,6 +19,25 @@ console.log(person[firstNameProperty]);
 
 
 
+
+
+
+
+
+
+
+
+
+
+// var person = new Object();
+//
+// person['firstname'] = 'Jesse'; //this is one way to set a value inside an Object
+// person['lastname'] = 'Smith';
+//
+// var firstNameProperty = 'firstname';
+//
+// console.log(person);
+// console.log(person[firstNameProperty]);
 
 
 //console.log(libraryName);
