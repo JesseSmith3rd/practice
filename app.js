@@ -1,34 +1,71 @@
+The Scope Chain
+
+
+
+//Variable environment: Talks about where the variable live in memory.
+// function b(){ <--- this operates on the third and final execution context
+//   var myVar;
+//   console.log(myVar);
+// }
+//
+// function a(){ <-- this operates in the a execution context
+//   var myVar = 2;
+//   console.log(myVar);
+//   b();
+// }
+//
+// var myVar = 1; <--This operates in the global execution context
+// console.log(myVar);
+// a();
+// console.log(myVar);
+//
+// (The way this works is it process from the global execution context then the next stack which is a, then the third stack which is b. Since JS is synchronous
+// it will process the code code from the top back down the stack and since we added another console.log(myVar) you should see another 1. So the output will be
+// 1,2, undefined (which pops off the stack and run a again then print out 1))
+// myvar 1 hits the global execution context first stack
+// then a() myVar 2 hits execution context second stack
+// then b() myVar undefined hits the third stack
+
+//Function Invocation And The execution Stack
+//Invocation: Means Running A Function In JS by using ();
+//example: The first thing that happens in the process below is called the global execution context (created and code is executed)
+//The second process is called execution context (create and execute) for a()
+//The third process is called execution context (create and execute) for b()
+//
+// function a(){
+//   b();
+//   var c;
+// }
+//
+// function b() {
+//   var dl
+// }
+//
+// a();
+// var d;
+
+
 //by value (primitives)
-var a = 3;
-var b;
-
-b = a;
-a = 2;
-
-console.log(a);
-console.log(b);
+// var a = 3;
+// var b;
+//
+// b = a;
+// a = 2;
+//
+// console.log(a);
+// console.log(b);
 
 //What happens is the
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// function b(){
+//   console.log('Called b!');
+// }
+//
+// b();
+//
+// var a = 'Hello World!';
+//
+// console.log(a);
 // var person = new Object();
 //
 // person['firstname'] = 'Jesse'; //this is one way to set a value inside an Object
