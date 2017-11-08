@@ -1,16 +1,20 @@
 //Understanding the scope chain
+//
+// function a() {
+//   function b() {
+//     console.log(myVar);
+//   }
+//
+//   var myVar = 2;
+//   b();
+// }
+//
+// var myVar = 1;
+// a();
 
-function a() {
-  function b() {
-    console.log(myVar);
-  }
-
-  var myVar = 2;
-  b();
-}
-
-var myVar = 1;
-a();
+// Scope:
+// Where a variable is available in your code.
+// And if its truly the same variable or a new copy.
 
 
 
