@@ -1,3 +1,15 @@
+a = 2;
+b = 1;
+
+if(a>b){
+  let c = true;
+}
+
+// Scope:
+// Where a variable is available in your code.
+// And if its truly the same variable or a new copy.
+
+
 //Understanding the scope chain
 //
 // function a() {
@@ -11,12 +23,6 @@
 //
 // var myVar = 1;
 // a();
-
-// Scope:
-// Where a variable is available in your code.
-// And if its truly the same variable or a new copy.
-
-
 
 //a = 42 / 2;
 //a = String(a);
