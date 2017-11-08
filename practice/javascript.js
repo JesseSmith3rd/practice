@@ -1,9 +1,11 @@
-a = 2;
-b = 1;
+//let allows block scoping.
 
-if(a>b){
-  let c = true;
-}
+// a = 2;
+// b = 1;
+//
+// if(a>b){
+//   let c = true;
+// }
 
 // Scope:
 // Where a variable is available in your code.
