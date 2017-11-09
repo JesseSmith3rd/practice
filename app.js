@@ -1,7 +1,37 @@
-The Scope Chain
-
-
-
+// //By Value (primitive types)
+// var a = 3;
+// var b;
+//
+// b = a;
+// a = 2;
+//
+// console.log(a);
+// console.log(b);
+//
+// //by reference (all objects(including functgions))
+// var c = { greeting: 'hi'};
+// var d;
+//
+// d = c;
+// //Big word alert Mutate: To change something 'immutable' means it can't be changed.
+// c.greeting = 'hello'; //mutate
+// console.log(c);
+// console.log(d);
+//
+// //by reference (even as parameters)
+// function changeGreeting(obj) {
+//   obj.greeting = 'Hola'; //Mutate
+// }
+//
+// changeGreeting(d);
+// console.log(c);
+// console.log(d);
+//
+// //Both c and d will have the same variable 'hola' because they are both pointing to the same place in memory.
+// // equals operator sets up new memory space (new address)
+// c = { greeting: 'howdy'};
+// console.log(c);
+// console.log(d);
 //Variable environment: Talks about where the variable live in memory.
 // function b(){ <--- this operates on the third and final execution context
 //   var myVar;
